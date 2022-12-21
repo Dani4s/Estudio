@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="e">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form>
+        <fieldset>
+            <legend>Formulario de Halo</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text"  id="nombre" placeholder="Nombre"/>
+            <legend>Experiencia en el juego</legend>
+            <textarea name="Grande" id="textoGrande" ></textarea>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="JuanPerez@...">
+            </div>
+            
+            <div>
+                <label for="password">password</label>
+                <input type="password" id="password">
+            </div>
+
+            <div>
+                <input type="radio" id="Hombre" name="Radio">
+                <label for="Hombre">Hombre</label>
+                <input type="radio" id="Mujer" name="Radio">
+                <label for="Mujer">Mujer</label>
+            </div>
+
+            <div>
+                <select name="Genero" id="elige">
+                    <option value="Hombre">Honbre</option>
+                    <option value="Mujer">Mujer</option>
+                </select>
+            </div>
+
+            <div>
+                <p>que clase de jugador eres?</p>
+                <label>
+                    <input type="checkbox" id="casual"> jugador casual
+                </label>
+                <label>
+                    <input type="checkbox" id="competitivo"> jugador competitivo
+                </label>
+            </div>
+
+            <div>
+                <label for="color">Color de tu armadura favorita</label>
+                <input type="color" id="color">
+            </div>
+
+            <div>
+                <input type="date">
+            </div>
+
+            <div>
+                <label for="file">Muestra captura de tus logros</label>
+                <input type="file" id="file">
+            </div>
+
+            <div>
+                <input type="hidden" name="oculto">
+            </div>
+
+            <div>
+                <label for="numero">Cuantos juegos de Halo tienes?</label>
+                <input type="number" id="numero">
+            </div>
+
+            <div>
+                <label for="experiencia">que tan bueno eres jugando?</label>
+                <input type="range" id="experiencia">
+            </div>
+
+            <div>
+                <label for="buscar">que desea  buscar?</label>
+                <input type="search" name="buscar" id="buscar">
+                <button>Buscar</button>
+            </div>
+
+            <div>
+                <input type="reset" name="reset" id="reset" value="vacia el formulario">
+            </div>
+
+            <div>
+                <input type="tel" name="telefono" id="telefono">
+            </div>
+
+            <div>
+                <input type="time" name="tiempo" id="tiempo">
+            </div>
+
+            <div>
+                <div>
+                    <label for="urk">Pon url</label>
+                    <input type="url" name="url" id="url">
+                </div>
+            </div>
+
+            <div>
+                <progress max="100" min="1" value="50"></progress>
+                <meter max="100" min="1" value="50"></meter>
+            </div>
+
+            <div>
+                <label for="halo">Juego de halo favorito</label>
+                <input  list="juegoDeHaloFavorito" name="halo" id="halo">
+                <datalist id="juegoDeHaloFavorito">
+                    <option value="halo ce"></option>
+                    <option value="halo 2"></option>
+                    <option value="halo 3"></option>
+                    <option value="halo 3 ODST"></option>
+                    <option value="halo Reach"></option>
+                    <option value="halo 4"></option>
+                    <option value="halo 5"></option>
+                    <option value="halo infinite"></option>
+                </datalist>
+            </div>
+
+
+
+            <input type="submit" value="Enviar">
+
+        </fieldset>
+        
+        <div>
+        <label for="validar">Ingresa un numero del 10 a 100</label>
+        <input type="number" name="validar" id="validad" required min="10" max="100" >
+        </div>
+
+        
+
+        
+
+
+
+        
+    </form>
+</body>
+</html>

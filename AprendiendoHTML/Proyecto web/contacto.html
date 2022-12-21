@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="icon/trioPoderoso.jpg">
+    <link rel="stylesheet" href="css/contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <div id="Contenedor">
+        <header>
+            <h1>Proyecto web html</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a class="none" href="index.html">Ir a pagina principal</a></li>
+                <li><a class="none" href="multimedia.html">Ir a multimedia</a></li>
+                <li><a class="none" href="diasDeEstudio.html">Ir a dias de estudio</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Contacto</h2>
+            <p><em>Llena este formulario para contactarnos</em></p>
+            <form>
+                <div>
+                    <label for="Nombre">Ingrese su nombre</label>
+                    <input class="formulario" type="text" name="Nombre" id="Nombre"  placeholder="Nombre">
+                </div>
+                
+                <div>
+                    <label for="Apellidos">Ingrese sus apellidos</label>
+                    <input class="formulario" type="text" name="Apellidos" id="Apellidos"  placeholder="Apellidos">
+                </div>
+
+                <div>
+                    <label for="email">Ingrese su correo</label>
+                    <input class="formulario" type="email" name="email" id="email"  placeholder="email">
+                </div>
+
+                <div>
+                    <label for="edad">Ingrese su edad</label>
+                    <input class="formulario" type="number" name="edad" id="edad" min="10" max="100" >
+                </div>
+
+                <div>
+                    <input class="formulario" type="checkbox" name="Hombre" id="Hombre" >
+                    <label for="Hombre">Hombre</label>
+                    <input class="formulario" type="checkbox" name="Mujer" id="Mujer" >
+                    <label for="Mujer">Mujer</label>
+                </div>
+
+                <div>
+                    <textarea class="formulario" name="motivo" id="motivo" cols="30" rows="10" placeholder="cual es el motivo del contacto?"></textarea>
+                </div>
+                <input class="enviar" type="submit" value="enviar formulario">
+            </form>
+        </main>
+
+        <footer>    
+            <hr/>
+            Proyecto de html&copy;
+        </footer>
+    </div>    
+</body>
+</html>
