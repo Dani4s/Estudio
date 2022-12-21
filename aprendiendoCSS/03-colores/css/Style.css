@@ -1,0 +1,16 @@
+.colorSistema {
+    color: blue;
+}
+
+.colorHexadecimal {
+    color:#29d8dbca;
+}
+
+.colorRGB{
+    color: rgb(236, 119, 27);
+}
+
+.colorRGBA {
+    color: rgba(236, 119, 27,.7);
+
+}

@@ -1,0 +1,74 @@
+/*Selectores*/
+
+/*Universal*/
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Selector etiquetas*/
+h1,h2 {
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+    font-size: 16px;
+}
+
+footer a {
+    color: red;
+}
+
+/*selector id*/
+#main {
+    border:  1px solid black;
+    padding: 15px;
+}
+
+/*selector clase*/
+
+.parrafo{
+    color: blue;
+    font-style: italic;
+}
+
+/*selector atributo*/
+
+#usuario form{
+    border: 5px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 25px;
+}
+
+#usuario form *
+{
+    display: block;
+}
+
+input[type="text"]{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 300px;
+}
+
+input[type="submit"]{
+    background-color: green;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/*Selectores hijos*/
+
+
+#menu > li > a {
+    color: red;
+} 

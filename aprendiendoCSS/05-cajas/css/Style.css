@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    padding: 30px;
+}
+
+main {
+    width: 825px;
+    border: 1px solid black;
+}
+
+.caja {
+    display: inline;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(209, 29, 29);
+    border:  5px solid black;
+    margin: 15px 10px 20px 5px;
+    float:left;
+}
+
+p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 230px;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.clear {
+    float: none;
+    clear: both;
+}
