@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Generar y ordenar números aleatorios</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+		h1 {
+			font-family: Arial, sans-serif;
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+  <h1>Generar y ordenar números aleatorios</h1>
+  <button onclick="generarNumeros()">Generar números</button>
+  <button onclick="ordenarNumeros()">Ordenar números</button>
+  <p id="numeros-ordenados"></p>
+  <p id="tiempo-ejecucion"></p>
+  <script>
+    var numeros = [];
+
+    function generarNumeros() {
+      numeros = [];
+      for (var i = 0; i < 10000; i++) {
+        numeros.push(Math.floor(Math.random() * 10000)); //numero del 1 a 9999.
+      }
+      document.getElementById("numeros-ordenados").innerHTML = "";
+    }
+
+    function estaOrdenado() {
+      for (var i = 0; i < numeros.length - 1; i++) {
+        if (numeros[i] > numeros[i + 1]) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+    function ordenarNumeros() {
+      var startTime = new Date().getTime();
+      while (!estaOrdenado()) {
+        for (var i = 0; i < numeros.length - 1; i++) {
+          if (numeros[i] > numeros[i + 1]) {
+            var tmp = numeros[i];
+            numeros[i] = numeros[i + 1];
+            numeros[i + 1] = tmp;
+          }
+        }
+      }
+      var endTime = new Date().getTime();
+      var tiempo = endTime - startTime;
+      document.getElementById("numeros-ordenados").innerHTML = "Números ordenados: " + numeros.join(", ");
+      document.getElementById("tiempo-ejecucion").innerHTML = "Tiempo de ejecución: " + tiempo + "ms";
+      return numeros;
+    }
+  </script>
+</body>
+</html>
+

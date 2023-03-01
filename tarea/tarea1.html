@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Búsqueda de nombre</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			padding: 20px;
+		}
+		label, input {
+			display: block;
+			margin-bottom: 10px;
+		}
+        
+	</style>
+</head>
+<body>
+	<h1>Búsqueda de nombre</h1>
+	<label for="nombre">Nombre a buscar:</label>
+	<input type="text" id="nombre">
+	<button onclick="buscarNombre()">Buscar</button>
+	<p id="resultado"></p>
+	
+	<script>
+		// Lista de nombres
+		var lista = ["Avila","Barrios","Campos","Diaz","Gomez","Hernandez","Lopez","Torres"];
+		
+		function buscarNombre() {
+			var nombre = document.getElementById("nombre").value;
+			var posicion = -1;
+			
+			// Buscar el nombre en la lista
+			for (var i = 0; i < lista.length; i++) {
+				if (nombre === lista[i]) {
+					posicion = i;
+					break;
+				}
+			}
+			
+			// Mostrar el resultado
+			var resultado = document.getElementById("resultado");
+			if (posicion >= 0) {
+				resultado.innerHTML = "Ha sido localizado el nombre: " + nombre + ", en la posicion: " + (posicion + 1);
+			} else {
+				resultado.innerHTML = "El nombre " + nombre + " no fue encontrado en la lista";
+			}
+		}
+	</script>
+</body>
+</html>
